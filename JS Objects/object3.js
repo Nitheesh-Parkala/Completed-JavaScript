@@ -19,4 +19,4 @@ console.log(keys)
 
 // object.values(object_name)
 var value=Object.values(person)
-console.log(value)
+console.log(value) 
