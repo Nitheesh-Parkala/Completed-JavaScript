@@ -53,10 +53,26 @@ console.log(arr4.join(''))
 console.log(arr4.join(' '))
 console.log(arr4.join('$'))
 
-// 7.reverse():
+// 7.reverse():If we want to reverse the array this particular method is used.
+let arr5=[10,"sachin",true,"virat",18,false]
+console.log(arr5.reverse())
 
-// 8.includes():
+// 8.includes():This method checks weather the data passed to it is present inside the array or not,If it present then it returns true else false.
+let arr6=[10,"sachin",true,"virat",18,false]
+console.log(arr6.includes(true))
+console.log(arr6.includes(7))
 
-// 9.slice():
+// 9.slice():When ever we need to extract the particular elements from array,It will not alter the original array.
+// slice(startindex)
+// slice(startindex,endindex)
+var arr=[10,20,30,40,50,60,70,80,90]
+console.log(arr.slice(4))
+console.log(arr.slice(2,5))
 
-// 10.splice():
+// 10.splice():Extraction starts at the start index extracts the length number of element from the array and it will alter original array.
+// splice(startindex,length)
+
+var arr=[10,20,30,40,50,60,70,80,90]
+console.log("original array:"+ arr)
+arr.splice(2,4)
+console.log("spliced array:"+ arr)
