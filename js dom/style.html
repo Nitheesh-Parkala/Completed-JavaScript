@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="one">Pentagon Space</h1>
+    <p class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam delectus vero nulla nobis temporibus dolor! Deleniti cum deserunt tempora ipsum suscipit quam excepturi autem, in accusamus quae vitae perferendis! Voluptatem?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum sit maxime quibusdam, </p>
+    <p class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam delectus vero nulla nobis temporibus dolor! Deleniti cum deserunt tempora ipsum suscipit quam excepturi autem, in accusamus quae vitae perferendis! Voluptatem?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum sit maxime quibusdam, </p>
+    <p class="two">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis laborum reiciendis necessitatibus neque illum sunt? Nemo aut voluptates esse nostrum nam! Magnam eos facere quidem, sapiente rerum quos voluptate deserunt.laudantium totam id, non ullam nobis aliquam, maiores rerum. Sunt alias iusto ad consectetur quae quaerat voluptates?</p>
+    <form>
+        <label>username</label>
+        <input type="text" name="username">
+        <br><br>
+        <label>password</label>
+        <input type="text" name="password">
+        <br><br>
+        <input type="submit">
+        <input type="text" name="username">
+        <br><br>
+    </form>
+    <!-- Js -->
+    <script>
+        // Using id 
+        var h1ref=document.getElementById('one')
+        h1ref.style.border="5px solid red"
+        h1ref.style.textAlign="center"
+        h1ref.style.backgroundColor="yellow"
+        h1ref.style.color="blue"
+
+    // Using className
+        var pref=document.getElementsByClassName('two')
+        pref[1].style.backgroundColor="black"
+        pref[1].style.color="white"
+        pref[2].style.border="2px solid black"
+
+    // using TagName
+        let label=document.getElementsByTagName('label')
+        label[0].style.color="red"
+        label[0].style.fontSize="26px"
+        label[0].style.background="yellow"
+        label[0].style.border="2px solid black"
+
+        label[1].style.color="red"
+        label[1].style.fontSize="26px"
+        label[1].style.background="yellow"
+        label[1].style.border="2px solid black"
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum sit harum ullam ipsum, architecto ea quia natus vel distinctio corrupti ratione neque nihil nobis, rem voluptatibus at dignissimos obcaecati cum.</p>
+    <script>
+    // document.createElement(): We can create web elements dynamically using create element method.
+    // In order to dynamically append created element in the web page or to the web page we take the help of append child method or append method.
+    var btn=document.createElement('button')
+    btn.innerHTML="dynamic button"
+
+    var body=document.body
+    body.append(btn)
+
+    var h1ref=document.createElement('h1')
+    h1ref.innerHTML="Welcome to pentagon space"
+    body.append(h1ref)
+    h1ref.style.border="5px solid blue"
+    h1ref.style.textAlign="center"
+
+    //remove(): By using remove() we can remove the web page dynamically from html document.
+    var pref=document.getElementById('one')
+    pref.remove()
+    btn.remove()
+    </script> 
+</body>
+</html>
