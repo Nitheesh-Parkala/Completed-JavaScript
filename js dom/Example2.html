@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lawngreen;
+        }
+        div{
+            margin: 100px auto;
+            box-shadow: 0px 0px 10px black;
+            width:500px;
+            padding: 50px;
+            background-color: white;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Create a password text box & see the hidden password -->
+     <div>
+        <h2>Show/Hide password</h2>
+        <input id="password" type="password" name="password">
+        <button id="btn" onclick="showPassword()">Show Password</button>
+     </div>
+     <script>
+        function showPassword(){
+        let password=document.getElementById('password')
+        let btn=document.getElementById('btn')
+        if(password.type=="password"){
+            password.type="text"
+            btn.innerHTML="HidePassword"
+        }
+        else{
+            password.type="password"
+            btn.innerHTML="Show Password"
+        }
+         }
+     </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>document</title>
+</head>
+<body>
+    <h1 id="one">welcome to pentagon space</h1>
+    <button onclick="ChangeContent()">click here</button>
+    
+    <!-- <P id="two"></P>
+    <h3 id="three"></h3>
+    <h4 id="four"></h4>
+    
+        //document.getElemetsById()
+        //by using this dom method we can access html elements by id name 
+        let h1ref=document.getElementById('one')
+        console.log(h1ref)
+        let pref=document.getElementById('two')
+        pref.innerHTML="Thank You For Visiting"
+
+        //diff b/w innerHTML and text content 
+        //innerHTML -> if we any html element present while using inner html property it will recognises html tags
+        let h4ref=document.getElementById("four")
+        h4ref.innerHTML="<i>welcome to js class</i>"
+
+        //textContent -> if we have any html tags present while using textCOntent will not recognoises and it will print as it is html tags
+        let h3ref=document.getElementById('three')
+        h3ref.textContent="<b>Hello how are you</b>" -->
+    <script>
+        function ChangeContent(){
+            let h1ref=document.getElementById('one')
+            h1ref.innnerHTML="thank you for visiting"
+        }
+    </script>
+    
+</body>
+</html>

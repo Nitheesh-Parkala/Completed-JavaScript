@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>username</label>
+        <input type="text" name="username">
+        <br><br>
+        <label>password</label>
+        <input type="text" name="password">
+        <br><br>
+        <input type="submit">
+        
+    </form>
+    <script>
+        //document.getElementByNAme()
+        //its used to find the elements on web page based on the name attribute 
+        //it returns nodelist it is nothing but an array of html elements
+        let username=document.getElementsByName('username')
+        console.log(username)
+    </script>
+</body>
+</html>

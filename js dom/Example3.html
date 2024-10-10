@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Create dom elements and delete dom elements -->
+     <h1>Dom Element</h1>
+     <button onclick="CreateDomButton()">Create Dom Button</button>
+
+     <script>
+        function CreateDomButton(){
+            var btnref=document.createElement('button')
+            var h2ref=document.createElement('h2')
+            h2ref.innerHTML="UI is created using Java Script"
+            btnref.innerHTML="Java Script Button"
+            btnref.style.color="white"
+            btnref.style.border="none"
+            btnref.style.padding="15px 25px"
+            btnref.style.backgroundColor="blue" 
+            
+            btnref.onclick=()=>{
+                h2ref.remove()
+                btnref.remove()
+            }
+            var body=document.body   
+            body.append(h2ref)
+            body.append(btnref)    
+        }
+     </script>
+</body>
+</html>
