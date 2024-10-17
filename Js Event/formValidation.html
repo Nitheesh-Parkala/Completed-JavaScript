@@ -1,0 +1,37 @@
+<!--Form Validation using DOM and Events -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> JS EVENTS</title>
+</head>
+<body>
+<form id="myform">
+<input type="email" id="email" placeholder="Enter Email"><br>
+<input type="Password" id="pwd" placeholder="Enter Password"><br>
+<input type="Password" id="cpwd" placeholder="Enter Conform Password"><br>
+<input type="button" value="Submit" onclick="validateForm()">
+</form>
+<script>
+function validateForm()
+{
+let    email=document.getElementById('email').value; let password=document.getElementById('pwd').value;
+let password1=document.getElementById('cpwd').value;
+
+
+if(email==''||password==''){
+alert('email or password cannot be null')
+}
+else if(password!=password1){ alert('password mismatch')
+}
+else{
+alert('data saved successfully') 
+document.getElementById('email').value=''
+ 
+document.getElementById('pwd').value='' 
+document.getElementById('cpwd').value=''
+}
+}
+</script>
+</body>
+</html>
